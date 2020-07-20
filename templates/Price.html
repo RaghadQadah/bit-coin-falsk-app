@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitCoin</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+</head>
+<body >
+  
+    <h1>Bit Coin Prices</h1>
+   <hr>
+ <div class="event">
+   <span></span>
+   <div class="info">
+     {{time}} <br />
+     {{U_des}}
+   </div>
+   <div class="price">
+   {{ U_rate}}
+   </div>
+ </div>
+    
+ <div class="event">
+   <span></span>
+   <div class="info">
+    {{time}} <br />
+     {{C_des}}
+   </div>
+   <div class="price">
+    {{C_rate}}
+   </div>
+ </div>
+ 
+ </body>
+</html>
